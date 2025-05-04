@@ -1,10 +1,10 @@
-@font-face {
+/*@font-face {
     font-family: 'System Font';
     src: url('assets/fonts/SFNS-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+}*/
 body {
     background: #000000;
     color: white;
@@ -92,8 +92,6 @@ th, td {
 
 pre code.gmacfx {
     font-family: "ProggyCleanSZ Nerd Font Mono";
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
     font-size: 16px;
     display: block;
     background: rgb(22, 22, 22);
