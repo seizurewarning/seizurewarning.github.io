@@ -20,9 +20,18 @@ a {
     text-decoration: none;
 }
 
+blockquote {
+    padding: 1em;
+    background: rgb(22, 22, 22);
+    border: 1px solid rgb(42, 42, 42);
+    opacity: 80%;
+    border-radius: 10px;
+    width: 75%;
+}
+
 table {
     text-align: left;
-    width: 100%;
+    width: ;
 }
 
 body {
@@ -49,7 +58,10 @@ h3 {
     font-size: 2em;
 }
 img {
+
+    padding: 1em;
     width: 100%;
+
 }
 
 p {

@@ -1,3 +1,9 @@
+img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
 pre code.gmacfx {
     font-family: "ProggyCleanSZ Nerd Font Mono";
     font-size: 16px;
