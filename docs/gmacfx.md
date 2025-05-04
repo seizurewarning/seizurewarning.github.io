@@ -3,15 +3,6 @@ layout: apidocs
 title:  "gmacfx"
 permalink: gmacfx-api
 ---
-<style>
-@font-face {
-    font-family: 'System Font';
-    src: url('assets/fonts/SFNS-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-</style>
 # gmacfx
 ## a dead simple scripting language for gmac.
 <pre><code class="gmacfx">name: example effect
