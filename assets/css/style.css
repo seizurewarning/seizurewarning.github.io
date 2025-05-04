@@ -10,6 +10,15 @@
     src: url('/assets/fonts/ProggyCleanSZNFM.woff2') format('woff2');
 }
 
+
+body {
+    background: #000000;
+    color: white;
+    max-width: 90vw;
+    margin: auto;
+}
+
+
 hr {
     color: #3A3A3C;
     opacity: 0.5;
@@ -22,6 +31,9 @@ a {
 :is(h1, h2, h3, h4, h5, h6, body) {
     font-family: 'System Font';
 }
+img {
+    width: 100%;
+}
 
 p {
     margin-bottom: 1em;
@@ -29,21 +41,21 @@ p {
 
 h1 {
     margin-bottom: 0.5em;
-    font-size: 2.75em;
+    font-size: 3em;
     font-weight: 300;
     line-height: 1;
 }
 
 h2 {
     margin-bottom: 0.5em;
-    font-size: 2.25em;
+    font-size: 2.5em;
     font-weight: 300;
     line-height: 1;
 }
 
 h3 {
     margin-bottom: 0.5em;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 300;
     line-height: 1;
 }
@@ -85,12 +97,4 @@ table {
 th, td {
     font-weight: normal;
     margin-bottom: auto;
-}
-
-body {
-    background: #000000;
-    color: white;
-    max-width: 90%;
-    margin: auto;
-    line-height: 150%;
 }
