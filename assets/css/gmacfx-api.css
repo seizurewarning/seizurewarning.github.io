@@ -1,6 +1,7 @@
 pre code.gmacfx {
     font-family: "ProggyCleanSZ Nerd Font Mono";
     font-size: 16px;
+    font-weight: normal;
     display: block;
     background: rgb(22, 22, 22);
     border: 1px solid rgb(42, 42, 42);

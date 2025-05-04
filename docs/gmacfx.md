@@ -1,8 +1,10 @@
 ---
-layout: apidocs
+layout: default
 title:  "gmacfx"
 permalink: gmacfx-api
 ---
+<link rel="stylesheet" type="text/css" href="{{ "/assets/css/gmacfx-api.css" | relative_url }}">
+
 # gmacfx
 ## a dead simple scripting language for gmac.
 <pre><code class="gmacfx">name: example effect
@@ -21,9 +23,9 @@ point: point[x,y]
 command: example_next_gmic_command
 params:
 ...</code></pre>
-## name
+### name
 a unique name for your effect.
-## category
+### category
 determines which submenu the effect should be a member of.<br>
 gmac has the following built-in categories:
 - 3d
@@ -38,11 +40,11 @@ gmac has the following built-in categories:
 - pattern
 
 if you give your effect a category that does not exist, it will be created.
-## command
+### command
 [any gmic command.](https://gmic.eu/reference/list_of_commands.html)
-## params
+### params
 a command's parameters.
-# parameters
+## parameters
 unexposed parameters can be denoted by a line with one or more values separated by commas:
 <pre><code class="gmacfx">0,5,2.5</code></pre>
 and the effect will always send those values, without creating any UI editor for the parameter.
@@ -86,8 +88,8 @@ for point parameters ranging 0-100, send:
 and for point parameters ranging 0-1, send:
 <pre><code class="gmacfx">point[default x, default y]%</code></pre>
 
-# helpers
-## % - normalize
+## helpers
+### % - normalize
 
 <table class="code-example-table">
     <tr>
@@ -112,6 +114,6 @@ and for point parameters ranging 0-1, send:
     </tr>
 </table>
 
-## // - comment
+### // - comment
 <pre><code class="gmacfx">// this is a comment</code></pre>
 the effect parser will ignore this line.<br>
