@@ -5,14 +5,14 @@ layout: none
 <head>
 <style>
 @font-face {
-    font-family: "SFProDisplay";
-    src: url('assets/fonts/SFProDisplay-Light.woff2') format('woff2'),
-        url('assets/fonts/SFProDisplay-Light.woff') format('woff');
+    font-family: 'System Font';
+    src: url('assets/fonts/SFNS-Regular.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 h1 {
-	font-family: "SF Pro Display";
+	font-family: 'System Font';
 	font-weight: 300;
 	color:white;
 }
