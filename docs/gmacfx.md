@@ -49,17 +49,17 @@ a command's parameters.
 <h3 class="token-comment" style="margin-top: 0.5em;">locked</h3>
 <pre><code class="gmacfx">0,5,2.5</code></pre>
 creates no interface.
-<h3 class="token-type">numeric</h3>
+<h3>numeric</h3>
 <pre><code class="gmacfx">float[default value]{minimum...maximum}</code></pre>
 <pre><code class="gmacfx">int[default value]{minimum...maximum}</code></pre>
 creates a slider interface.
-<h3 class="token-type">boolean</h3>
+<h3>boolean</h3>
 <pre><code class="gmacfx">bool[default]</code></pre>
 creates a toggle interface.
-<h3 class="token-type">menu</h3>
+<h3>menu</h3>
 <pre><code class="gmacfx">menu[default index]{option 0, option 1}</code></pre>
 creates a menu interface.
-<h3 class="token-type">point</h3>
+<h3>point</h3>
 <pre><code class="gmacfx">point[default x value, default y value]</code></pre>
 creates a point interface.
 {% include modal.html id="point-params-note" title="note on point parameters" content="gmacfx/note-point-params.md" link_text="note on point parameters" %}
@@ -79,10 +79,6 @@ normalizes parameters
 <td><pre><code class="gmacfx">int[50]{0...100}</code></pre></td>
 </tr>
 <tr>
-<td><pre><code class="gmacfx">point[50,50]</code></pre></td>
-<th style="text-align: center;">→</th>
-<td><pre><code class="gmacfx">50,50</code></pre></td>
-</tr>
 <tr>
 <td><pre><code class="gmacfx">point[50,50]%</code></pre></td>
 <th style="text-align: center;">→</th>
