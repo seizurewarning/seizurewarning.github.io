@@ -64,7 +64,7 @@ creates a menu interface.
 <h3 class="token-type">point</h3>
 <pre><code class="gmacfx">point[default x value, default y value]</code></pre>
 creates a point interface.
-{% include modal.html id="point-params-note" title="note on point parameters" content="note-point-params.html" link_text="note on point parameters" %}
+{% include modal.html id="point-params-note" title="note on point parameters" content="gmacfx/note-point-params.md" link_text="note on point parameters" %}
 <hr>
 ## helpers
 <h3 class="token-brackets">%</h3>
