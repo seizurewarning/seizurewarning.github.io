@@ -1,0 +1,15 @@
+<p>different gmic commands expect different ranges of values for this pairing. pay close attention to the expected parameter values for each command, for example:</p>
+<pre><code class="gmacfx">light_relief 0.3,0.2,0.2,0,1,50%,50%,5,0.5,0</code></pre>
+<pre><code class="gmacfx">fx_light_relief 0.3,0.2,0.2,0,1,50%,50%,5,0.5,0,0</code></pre>
+<p><a href="https://gmic.eu/reference/light_relief.html">light_relief</a> is the built-in relief light command from gmic,</p>
+<p>and fx_light_relief is a community command that adds some extra swag to light_relief.</p>
+<p>the command parameter values are identical(apart from the extra 0 in fx_light_relief, which is a smoothing  parameter), but take a look at the outputs:</p>
+<img src="/assets/images/gmacfx/lr_fxlr.png" alt="&quot;lr-fxlr&quot;" />
+<p>it's subtle, but take a closer look at the top-left corner of both images.</p>
+<img src="/assets/images/gmacfx/comparison.png" alt="comparison" />
+<p>light_relief sends the light at the center of the image correctly, while fx_light_relief does not.</p>
+<p>light_relief is expecting values ranging from 0-1, while fx_light_relief is expecting values ranging from 0-100.</p>
+<p>for point parameters ranging 0-100, send:</p>
+<pre><code class="gmacfx">point[default x, default y]</code></pre>
+<p>and for point parameters ranging 0-1, send:</p>
+<pre><code class="gmacfx">point[default x, default y]%</code></pre>

@@ -5,7 +5,7 @@ permalink: gmacfx-api
 ---
 <link rel="stylesheet" type="text/css" href="{{ "/assets/css/gmacfx-api.css" | relative_url }}">
 
-# gmacfx
+# .gmacfx
 ## a dead simple scripting language for gmac.
 <pre><code class="gmacfx">name: example effect
 category: example category 
@@ -61,21 +61,10 @@ creates a menu interface.
 ### point
 <pre><code class="gmacfx">point[default x value, default y value]</code></pre>
 creates a point interface.
-{% include sheet.html %}
-different gmic commands expect different ranges of values for this pairing. pay close attention to the expected parameter values for each command, for example:
-<pre><code class="gmacfx">light_relief 0.3,0.2,0.2,0,1,50%,50%,5,0.5,0</code></pre>
-<pre><code class="gmacfx">fx_light_relief 0.3,0.2,0.2,0,1,50%,50%,5,0.5,0,0</code></pre>
-[light_relief](https://gmic.eu/reference/light_relief.html) is the built-in relief light command from gmic, and fx_light_relief is a community command 	that adds some extra swag to light_relief.
- the command parameter values are identical(apart from the extra 0 in fx_light_relief, which is a smoothing  parameter), but take a look at the outputs:<br>
-!["lr-fxlr"](/assets/images/gmacfx/lr_fxlr.png)<br>
-it's subtle, but take a closer look at the top-left corner of both images.<br>
-![comparison](/assets/images/gmacfx/comparison.png)<br>
-light_relief sends the light at the center of the image correctly, while fx_light_relief does not.
-light_relief is expecting values ranging from 0-1, while fx_light_relief is expecting values ranging from 0-100.
-for point parameters ranging 0-100, send:
-<pre><code class="gmacfx">point[default x, default y]</code></pre>
-and for point parameters ranging 0-1, send:
-<pre><code class="gmacfx">point[default x, default y]%</code></pre>
+{% include modal.html id="point-params-note" title="note on point parameters" content="note-point-params.html" link_text="note on point parameters" %}
+<br>
+
+---
 ## helpers
 ### % - normalize
 
