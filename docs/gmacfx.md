@@ -4,7 +4,9 @@ title:  "gmacfx"
 permalink: gmacfx-api
 ---
 <link rel="stylesheet" type="text/css" href="{{ "/assets/css/gmacfx-api.css" | relative_url }}">
+<style>
 
+</style>
 # .gmacfx
 ## a dead simple scripting language for gmac.
 <pre><code class="gmacfx">name: example effect
@@ -23,9 +25,9 @@ point: point[x,y]
 command: example_next_gmic_command
 params:
 ...</code></pre>
-### name
+<h3 class="token-keyword-def">name</h3>
 a unique name for your effect.
-### category
+<h3 class="token-keyword-def">category</h3>
 determines which submenu the effect should be a member of.<br>
 gmac has the following built-in categories:
 - 3d
@@ -40,34 +42,33 @@ gmac has the following built-in categories:
 - pattern
 
 if you give your effect a category that does not exist, it will be created.
-### command
+<h3 class="token-keyword-def">command</h3>
 [any gmic command.](https://gmic.eu/reference/list_of_commands.html)
-### params
+<h3 class="token-keyword-def">params</h3>
 a command's parameters.
+<hr>
 ## parameters
-### locked
+<h3 class="token-comment">locked</h3>
 <pre><code class="gmacfx">0,5,2.5</code></pre>
 creates no interface.
-### numeric
+<h3 class="token-type">numeric</h3>
 <pre><code class="gmacfx">float[default value]{minimum...maximum}</code></pre>
 <pre><code class="gmacfx">int[default value]{minimum...maximum}</code></pre>
 creates a slider interface.
-### boolean
+<h3 class="token-type">boolean</h3>
 <pre><code class="gmacfx">bool[default]</code></pre>
 creates a toggle interface.
-### menu
+<h3 class="token-type">menu</h3>
 <pre><code class="gmacfx">menu[default index]{option 0, option 1}</code></pre>
 creates a menu interface.
-### point
+<h3 class="token-type">point</h3>
 <pre><code class="gmacfx">point[default x value, default y value]</code></pre>
 creates a point interface.
 {% include modal.html id="point-params-note" title="note on point parameters" content="note-point-params.html" link_text="note on point parameters" %}
-<br>
-
----
+<hr>
 ## helpers
-### % - normalize
-
+<h3 class="token-brackets">%</h3>
+normalizes parameters
 <table class="code-example-table">
     <tr>
         <td><pre><code class="gmacfx">float[0.5]%</code></pre></td>
@@ -91,6 +92,6 @@ creates a point interface.
     </tr>
 </table>
 
-### // - comment
+<h3 class="token-comment">//</h3>
 <pre><code class="gmacfx">// this is a comment</code></pre>
 the effect parser will ignore this line.<br>
