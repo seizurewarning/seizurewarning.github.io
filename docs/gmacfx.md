@@ -1,13 +1,9 @@
 ---
 layout: default
-title:  "gmacfx"
-permalink: gmacfx-api
+title:  ".gmacfx"
+permalink: gmacfx
 ---
 <link rel="stylesheet" type="text/css" href="{{ "/assets/css/gmacfx-api.css" | relative_url }}">
-<style>
-
-</style>
-# .gmacfx
 ## a dead simple scripting language for gmac.
 <pre><code class="gmacfx">name: example effect
 category: example category 
@@ -19,12 +15,14 @@ float: float[50.3]{1...100}
 boolean: bool[true]
 menu: menu[0]{option 0, option 1}
 point: point[x,y]
-0
-1
+0,1
 
 command: example_next_gmic_command
 params:
 ...</code></pre>
+
+---
+
 <h3 class="token-keyword-def">name</h3>
 a unique name for your effect.
 <h3 class="token-keyword-def">category</h3>
@@ -48,7 +46,7 @@ if you give your effect a category that does not exist, it will be created.
 a command's parameters.
 <hr>
 ## parameters
-<h3 class="token-comment">locked</h3>
+<h3 class="token-comment" style="margin-top: 0.5em;">locked</h3>
 <pre><code class="gmacfx">0,5,2.5</code></pre>
 creates no interface.
 <h3 class="token-type">numeric</h3>
@@ -70,28 +68,27 @@ creates a point interface.
 <h3 class="token-brackets">%</h3>
 normalizes parameters
 <table class="code-example-table">
-    <tr>
-        <td><pre><code class="gmacfx">float[0.5]%</code></pre></td>
-        <th style="padding: 0.5em;">→</th>
-        <td><pre><code class="gmacfx">float[0.5]{0...1}</code></pre></td>
-    </tr>
-    <tr>
-        <td><pre><code class="gmacfx">int[50]%</code></pre></td>
-        <th style="padding: 0.5em;">→</th>
-        <td><pre><code class="gmacfx">int[50]{0...100}</code></pre></td>
-    </tr>
-    <tr>
-        <td><pre><code class="gmacfx">point[50,50]</code></pre></td>
-        <th style="padding: 0.5em;">→</th>
-         <td><pre><code class="gmacfx">50,50</code></pre></td>
-    </tr>
-    <tr>
-        <td><pre><code class="gmacfx">point[50,50]%</code></pre></td>
-        <th style="padding: 0.5em;">→</th>
-        <td><pre><code class="gmacfx">0.5,0.5</code></pre></td>
-    </tr>
+<tr>
+<td><pre><code class="gmacfx">float[0.5]%</code></pre></td>
+<th style="text-align: center;">→</th>
+<td><pre><code class="gmacfx">float[0.5]{0...1}</code></pre></td>
+</tr>
+<tr>
+<td><pre><code class="gmacfx">int[50]%</code></pre></td>
+<th style="text-align: center;">→</th>
+<td><pre><code class="gmacfx">int[50]{0...100}</code></pre></td>
+</tr>
+<tr>
+<td><pre><code class="gmacfx">point[50,50]</code></pre></td>
+<th style="text-align: center;">→</th>
+<td><pre><code class="gmacfx">50,50</code></pre></td>
+</tr>
+<tr>
+<td><pre><code class="gmacfx">point[50,50]%</code></pre></td>
+<th style="text-align: center;">→</th>
+<td><pre><code class="gmacfx">0.5,0.5</code></pre></td>
+</tr>
 </table>
 
 <h3 class="token-comment">//</h3>
 <pre><code class="gmacfx">// this is a comment</code></pre>
-the effect parser will ignore this line.<br>

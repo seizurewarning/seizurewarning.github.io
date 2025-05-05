@@ -6,38 +6,35 @@ img {
 
 pre code.gmacfx {
     font-family: "ProggyCleanSZ Nerd Font Mono";
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
-    line-height: 1.2em;
     display: block;
     background: rgb(22, 22, 22);
     border: 1px solid rgb(42, 42, 42);
     border-radius: 10px;
     padding: 0.5em;
-    margin: 0.5em 0;
+    margin: 1em 0;
 }
 
 h3 {
     font-family: "ProggyCleanSZ Nerd Font Mono";
+    font-style: monospace;
 }
 
 .token-comment {
     color: rgb(127, 140, 152);
 }
-
 .token-keyword-def {
-    color: rgb(255, 122, 178);
+    color: rgb(129, 94, 206);
 }
-
 .token-type {
-    color: rgb(172, 242, 228);
+    color: rgb(168, 230, 213);
 }
-
 .token-brackets {
-    color: rgb(217, 201, 124);
+    color: rgb(230, 201, 135);
 }
 
 .token-braces-content {
-    color: rgb(217, 201, 124);
+    color: rgb(230, 201, 135);
 }
 

@@ -33,7 +33,7 @@ Usage: {% include modal.html id="unique-modal-id" title="Modal Title" content="_
   .modal-header {
       display: flex;
       align-items: center;
-      padding: 2em 1.5em;
+      padding: 0 1.5em;
       padding-bottom: 0;
       justify-content: space-between;
   }
@@ -63,12 +63,12 @@ Usage: {% include modal.html id="unique-modal-id" title="Modal Title" content="_
   }
 </style>
 
-<a href="#" id="open-{{ include.id }}" style="font-size: 2em;">{{ include.link_text | default: "Open" }}</a>
+<a href="#" id="open-{{ include.id }}" style="font-size: clamp(1.5rem, 3vw, 2rem);">{{ include.link_text | default: "Open" }}</a>
 
 <div id="{{ include.id }}-container" class="modal-container">
   <div class="modal-content">
     <div class="modal-header">
-      <h2>{{ include.title }}</h2>
+      <h3 style="font-family: --main-font;">{{ include.title }}</h3>
       <span class="modal-close" id="close-{{ include.id }}">&times;</span>
     </div>
     <hr>

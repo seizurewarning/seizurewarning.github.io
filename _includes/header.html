@@ -1,27 +1,70 @@
 <style>
+  .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+  
   .header-frame {
       display: flex;
       align-items: center;
   }
-
+  
   .image-frame {
       display: inline-block;
-      background: url("../assets/images/logos/logodithered.gif")
-                  no-repeat center;
+      background: url("../assets/images/logos/logodithered.gif") no-repeat center;
       width: calc(4vw + 4vh);
       height: calc(4vw + 4vh);
       background-size: cover;
   }
-
+  
   .text-frame {
       font-size: calc(2.5vw + 2.5vh);
       display: inline-block;
       margin: 1vh 1vw;
-  }    
-
+  }
+  
+  .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2vw;
+      margin-right: 2vw;
+  }
+  
+  .nav-links a {
+      text-decoration: none;
+      color: #222;
+      font-size: calc(1vw + 1vh);
+      transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+      color: #444;
+      text-decoration: underline;
+  }
+  
+  .nav-links a.active {
+      color: white;
+      text-decoration: underline;
+  }
 </style>
-<div class="header-frame">
-  <span class="image-frame"></span>
-  <h1 class="text-frame">gmac</h1>
+
+<div class="header-container">
+  <div class="header-frame">
+    <span class="image-frame"></span>
+    <h1 class="text-frame">gmac</h1>
+  </div>
+
+  <div class="nav-links">
+    {% assign overview_title = "overview" %}
+    {% assign gmacfx_title = ".gmacfx" %}
+
+    <a href="overview" {% if page.title == overview_title %}class="active"{% endif %}>{{overview_title}}</a>
+    <a href="gmacfx" {% if page.title == gmacfx_title %}class="active"{% endif %}>{{gmacfx_title}}</a>
+
+  </div>
 </div>
 <hr>
+
+<h1>{{page.title}}</h1>
