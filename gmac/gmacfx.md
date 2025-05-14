@@ -4,6 +4,7 @@ title:  ".gmacfx"
 permalink: gmacfx
 ---
 <link rel="stylesheet" type="text/css" href="{{ "/assets/css/gmacfx-api.css" | relative_url }}">
+<script src="/assets/js/highlighter.js"></script>
 # .gmacfx
 ## a dead simple scripting language for gmac.
 <pre><code class="gmacfx">name: example effect
@@ -66,14 +67,13 @@ creates a point interface.
 {% include modal.html id="point-params-note" title="note on point parameters" content="gmacfx/note-point-params.md" link_text="note on point parameters" %}
 <hr>
 ## helpers
+<div>
 <h3 class="token-brackets">%</h3>
 normalizes parameters
 <table class="code-example-table">
-<tr>
 <td><pre><code class="gmacfx">float[0.5]%</code></pre></td>
 <th style="text-align: center;">→</th>
 <td><pre><code class="gmacfx">float[0.5]{0...1}</code></pre></td>
-</tr>
 <tr>
 <td><pre><code class="gmacfx">int[50]%</code></pre></td>
 <th style="text-align: center;">→</th>
@@ -84,8 +84,3 @@ normalizes parameters
 <td><pre><code class="gmacfx">point[50,50]%</code></pre></td>
 <th style="text-align: center;">→</th>
 <td><pre><code class="gmacfx">0.5,0.5</code></pre></td>
-</tr>
-</table>
-
-<h3 class="token-comment">//</h3>
-<pre><code class="gmacfx">// this is a comment</code></pre>
