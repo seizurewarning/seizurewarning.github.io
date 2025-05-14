@@ -60,6 +60,11 @@ p {
     margin: 0.25em 0;
 }
 
+.subtext {
+    opacity: 0.60;
+    text-align: center;
+}
+
 a {
     color: var(--accent-color);
     text-decoration: none;
@@ -71,7 +76,7 @@ a:hover, a:focus {
 
 hr {
     color: var(--hr-color);
-    opacity: 0.5;
+    opacity: 0.8;
     margin: 1.5rem 0;
     border: none;
     border-top: 1px solid var(--hr-color);
