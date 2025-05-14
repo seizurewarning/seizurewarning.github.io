@@ -80,10 +80,6 @@ normalizes parameters
 <td><pre><code class="gmacfx">int[50]{0...100}</code></pre></td>
 </tr>
 <tr>
-<td><pre><code class="gmacfx">point[50,50]</code></pre></td>
-<th style="text-align: center;">→</th>
-<td><pre><code class="gmacfx">50,50</code></pre></td>
-</tr>
 <tr>
 <td><pre><code class="gmacfx">point[50,50]%</code></pre></td>
 <th style="text-align: center;">→</th>
